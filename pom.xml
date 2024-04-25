@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany</groupId>
+    <artifactId>ProyectoFinal</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <exec.mainClass>com.mycompany.proyectofinal.ProyectoFinal</exec.mainClass>
+    </properties>
+
+    <dependencies>
+    <!-- Otras dependencias -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.28</version>
+    </dependency>
+    
+    <!-- Dependencia de Lombok -->
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.22</version> <!-- La versión más reciente disponible al momento de escribir esto -->
+        <scope>provided</scope> <!-- Lombok solo es necesario en tiempo de compilación -->
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-jpa</artifactId>
+    <version>3.2.5</version>
+</dependency>
+
+<dependency>
+    <groupId>jakarta.persistence</groupId>
+    <artifactId>jakarta.persistence-api</artifactId>
+    <version>3.0.0</version>
+</dependency>
+
+
+</dependencies>
+
+</project>
